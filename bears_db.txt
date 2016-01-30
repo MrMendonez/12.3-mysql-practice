@@ -1,0 +1,11 @@
+Create a bears_db database, make a happy_bears table with a primary integer auto incrementing key of id, a name varchar(30) not null, a favorite_food varchar(30) not null, a personality varchar(30) not null.
+
+Insert a happy bear named Nom Nom whose favorite food is tacos and is mean.
+
+// Solution
+
+CREATE DATABASE bears_db;
+
+USE bears_db;
+
+CREATE TABLE happy_bears (id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(30) NOT NULL, favorite_food VARCHAR(30) NOT NULL);

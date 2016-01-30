@@ -1,0 +1,52 @@
+Review of MYSQL
+
+CREATE DATABASE sports;
+
+USE sports;
+
+CREATE TABLE extreme_sports (id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(255) NOT NULL, intensity FLOAT NOT NULL);
+
+SHOW TABLES;
+
+DESCRIBE extreme_sports;
+
+INSERT INTO extreme_sports (name, intensity) VALUES ("BMX", 7); 
+
+INSERT INTO extreme_sports (name, intensity) VALUES ('Skiing', 4);
+
+INSERT INTO extreme_sports (name, intensity) VALUES ('Programming', 10);
+
+UPDATE extreme_sports SET intensity=3 WHERE id=3;
+
+SELECT * FROM extreme_sports;
+
+SELECT * FROM extreme_sports ORDER BY name;
+
+SELECT * FROM extreme_sports ORDER BY name DESC;
+
+SELECT * FROM extreme_sports ORDER BY intensity DESC;
+
+SELECT * FROM extreme_sports ORDER BY intensity;
+
+SELECT * FROM extreme_sports WHERE name LIKE("ing");
+
+SELECT * FROM extreme_sports WHERE name LIKE("%ing%");
+
+SELECT * FROM extreme_sports WHERE name LIKE("%ing");
+
+SELECT * FROM extreme_sports WHERE name LIKE("%ing") AND intensity > 3;
+
+SELECT * FROM extreme_sports WHERE name LIKE("%ing") or intensity > 3;
+
+DELETE FROM extreme_sports WHERE id=3;
+
+SELECT * FROM etreme_sports;
+
+ALTER TABLE extreme_sports ADD description text;
+
+SELECT * FROM extreme_sports;
+
+DESCRIBE extreme_sports;
+
+SELECT * FROM extreme_sports;
+
